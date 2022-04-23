@@ -1,0 +1,61 @@
+Query: Create 3 new dojos
+INSERT INTO dojos (name)
+VALUES ('Coding Dojo');
+
+INSERT INTO dojos (name)
+VALUES ('The Misty Mountain');
+
+INSERT INTO dojos (name)
+VALUES ('The League of Shadows');
+
+Query: Delete the 3 dojos you just created
+DELETE * FROM dojos;
+
+Query: Create 3 more dojos
+INSERT INTO dojos (name)
+VALUES ('Smoky Mountain');
+
+INSERT INTO dojos (name)
+VALUES ('The Underground Lair');
+
+INSERT INTO dojos (name)
+VALUES ('Coder Den');
+
+Query: Create 3 ninjas that belong to the first dojo
+INSERT INTO ninjas (first_name, last_name, age, dojo_id)
+VALUES ('Harry', 'Potter', 11, 1);
+
+INSERT INTO ninjas (first_name, last_name, age, dojo_id)
+VALUES ('Hermione', 'Granger', 11, 1);
+
+INSERT INTO ninjas (first_name, last_name, age, dojo_id)
+VALUES ('Ron Weasley', 'Potter', 11, 1);
+
+Query: Create 3 ninjas that belong to the second dojo
+INSERT INTO ninjas (first_name, last_name, age, dojo_id)
+VALUES ('Cornelius', 'Fudge', 112, 2;
+
+INSERT INTO ninjas (first_name, last_name, age, dojo_id)
+VALUES ('Paul', 'Ranger', 36, 2);
+
+INSERT INTO ninjas (first_name, last_name, age, dojo_id)
+VALUES ('Al', 'Smith', 42, 2);
+
+Query: Create 3 ninjas that belong to the third dojo
+INSERT INTO ninjas (first_name, last_name, age, dojo_id)
+VALUES ('Abdul', 'Salam', 36, 3;
+
+INSERT INTO ninjas (first_name, last_name, age, dojo_id)
+VALUES ('Jacob', 'Adams', 78, 3);
+
+INSERT INTO ninjas (first_name, last_name, age, dojo_id)
+VALUES ('Ranbir', 'Singh', 51, 3);
+
+Query: Retrieve all the ninjas from the first dojo
+SElECT * FROM ninjas WHERE dojo_id = 1;
+
+Query: Retrieve all the ninjas from the last dojo
+SElECT * FROM ninjas WHERE dojo_id = 3;
+
+Query: Retrieve the last ninja's dojo
+SElECT dojo_id FROM ninjas WHERE id = 8;

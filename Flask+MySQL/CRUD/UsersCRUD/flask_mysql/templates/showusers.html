@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/showusers.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>All Users</h1>
+        {% for one_user in all_users %}
+        <div class="user_holder">
+            <p>First Name: {{one_user.first_name}}</p>
+            <p>Last Name: {{one_user.last_name}}</p>
+            <p>Email: {{one_user.email}}</p>
+            <a href="users/{{one_user.id}}">Show</a>
+            <a href="users/{{one_user.id}}/edit">Edit</a>
+            <a href="users/{{one_user.id}}/delete">Delete</a>
+        </div>
+        <hr>
+        {% endfor %}
+        <a href="/users/new" class="user_add">Add a New User</a>
+    </div>
+</body>
+</html>

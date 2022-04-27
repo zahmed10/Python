@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/userpage.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>User {{ intended_user['id'] }} </h1>
+            <a href="/users" class="link">Home</a>
+    </div>
+        <div class="user_card">
+            <p>Full Name: {{intended_user['first_name']}}</p>
+            <p>Last Name: {{intended_user['last_name']}}</p>
+            <p>Email: {{intended_user['email']}}</p>
+            <p>Last Updated On: {{intended_user['updated_at']}}</p>
+        </div>
+    </div>
+    <div class="controls">
+
+        <a href="/users/{{intended_user['id']}}/edit">Edit</a>
+        <a href="/users/{{intended_user['id']}}/delete">Delete</a>
+    </div>
+</body>
+</html>

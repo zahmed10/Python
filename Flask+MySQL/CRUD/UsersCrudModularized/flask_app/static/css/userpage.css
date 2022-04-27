@@ -1,0 +1,26 @@
+.user_card {
+    height: 150px;
+    width: 400px;
+    /* background-color: red; */
+    border-style: solid;
+    padding-left: 10px;
+}
+
+.head {
+    margin-left: 3px;
+    display: flex;
+}
+
+.container {
+    /* display: flex; */
+}
+
+.link {
+    margin-left: 400px;
+    margin-top: 35px;
+}
+
+.controls {
+    margin-top: 40px;
+    /* margin-left: 0px; */
+}

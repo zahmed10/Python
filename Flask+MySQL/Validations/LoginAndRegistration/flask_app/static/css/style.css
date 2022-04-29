@@ -1,0 +1,42 @@
+* {
+    margin: 0 auto; 
+}
+
+.container {
+    padding-top: 160px;
+    /* padding-right: 160px; */
+    height: 1000px;
+    width: 1000px;
+    background-color: red;
+    display: flex;
+}
+
+.left {
+    height: 800px;
+    width: 450px;
+    /* background-color: azure; */
+    /* background-color: blanchedalmond; */
+    background-color: aqua;
+}
+
+.right {
+    height: 800px;
+    width: 450px;
+    background-color: aqua;
+    /* background-color: blanchedalmond; */
+}
+
+.form {
+    display: flex;
+    /* padding-left: 10px; */
+}
+
+.header {
+    /* margin-top: 100px; */
+}
+
+.form2 {
+    margin-top: 100px;
+    /* margin-right: 100px; */
+    margin-right: 350px;
+}
